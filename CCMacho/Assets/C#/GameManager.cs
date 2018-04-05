@@ -40,6 +40,7 @@ public class GameManager : MonoBehaviour
             {
                 Material[] material = new Material[] { (Material)Resources.Load(machoAMaterialPath) as Material };
                 obj.GetComponent<Renderer>().materials = material;
+                obj.GetComponent<ParticleSystemRenderer>().material = material[0];
 
             }
 
@@ -51,13 +52,8 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-
-
         for (int i = 0; i < machoAs.Length; ++i)
         {
-
-
             Vector3 machoAForce = new Vector3(0, 0, 0);
 
             if (i < maxMachoCount / 2)
@@ -71,6 +67,7 @@ public class GameManager : MonoBehaviour
 
                 machoAForce += TeamAutoMove(machoAs[i], false);
                 //machoAForce.z -= 1f;
+
             }
 
             //machoAForce.x += Random.Range(-1f, 1f);
@@ -150,11 +147,11 @@ public class GameManager : MonoBehaviour
                 force += new Vector3(2f, 0f, 0f);
                 if (ball[0].transform.position.z < macho_.transform.position.z)
                 {
-                    force += new Vector3(0f, 0f, 0.5f);
+                    //force += new Vector3(0f, 0f, 0.5f);
                 }
                 else
                 {
-                    force += new Vector3(0f, 0f, -0.5f);
+                   // force += new Vector3(0f, 0f, -0.5f);
                 }
             }
         }
