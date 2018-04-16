@@ -1,0 +1,263 @@
+fileFormatVersion: 2
+guid: 8d0a1d283c8f4784eb0db0653cadea75
+timeCreated: 1523239739
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Bone016
+    100002: Bone018
+    100004: Bone023
+    100006: Bone024
+    100008: Bone025
+    100010: Bone026
+    100012: Bone027
+    100014: Bone032
+    100016: Bone035
+    100018: Bone038
+    100020: Bone039
+    100022: Bone040
+    100024: Dummy001
+    100026: Dummy002
+    100028: Dummy003
+    100030: Dummy004
+    100032: IK Chain001
+    100034: IK Chain002
+    100036: IK Chain003
+    100038: //RootNode
+    100040: "\u30B9\u30AB\u30FC\u30C8\u53F3\u524D1"
+    100042: "\u30B9\u30AB\u30FC\u30C8\u53F3\u524D2"
+    100044: "\u30B9\u30AB\u30FC\u30C8\u53F3\u5F8C1"
+    100046: "\u30B9\u30AB\u30FC\u30C8\u53F3\u5F8C2"
+    100048: "\u30B9\u30AB\u30FC\u30C8\u5DE6\u524D1"
+    100050: "\u30B9\u30AB\u30FC\u30C8\u5DE6\u524D2"
+    100052: "\u30B9\u30AB\u30FC\u30C8\u5DE6\u5F8C1"
+    100054: "\u30B9\u30AB\u30FC\u30C8\u5DE6\u5F8C2"
+    100056: "\u30DD\u30CB\u30FC\u30C6\u30FC\u30EB00"
+    100058: "\u30DD\u30CB\u30FC\u30C6\u30FC\u30EB01"
+    100060: "\u30DD\u30CB\u30FC\u30C6\u30FC\u30EB02"
+    100062: "\u30DD\u30CB\u30FC\u30C6\u30FC\u30EB03"
+    100064: "\u30DD\u30CB\u30FC\u30C6\u30FC\u30EBIK"
+    100066: "\u53F3\u624B"
+    100068: "\u53F3\u80A9"
+    100070: "\u53F3\u81551"
+    100072: "\u53F3\u81552"
+    100074: "\u53F3\u817F"
+    100076: "\u53F3\u8DB3"
+    100078: "\u53F3\u8DB32"
+    100080: "\u53F3\u8DB3IK"
+    100082: "\u5DE6\u624B"
+    100084: "\u5DE6\u80A9"
+    100086: "\u5DE6\u81551"
+    100088: "\u5DE6\u81552"
+    100090: "\u5DE6\u817F"
+    100092: "\u5DE6\u8DB3"
+    100094: "\u5DE6\u8DB32"
+    100096: "\u5DE6\u8DB3IK"
+    100098: "\u80F8"
+    100100: "\u8170"
+    100102: "\u81702"
+    100104: "\u8179"
+    100106: "\u982D"
+    100108: "\u982D\u7D42"
+    100110: "\u9996"
+    100112: "\uFF85\uFF7D\uFF9E\uFF85"
+    400000: Bone016
+    400002: Bone018
+    400004: Bone023
+    400006: Bone024
+    400008: Bone025
+    400010: Bone026
+    400012: Bone027
+    400014: Bone032
+    400016: Bone035
+    400018: Bone038
+    400020: Bone039
+    400022: Bone040
+    400024: Dummy001
+    400026: Dummy002
+    400028: Dummy003
+    400030: Dummy004
+    400032: IK Chain001
+    400034: IK Chain002
+    400036: IK Chain003
+    400038: //RootNode
+    400040: "\u30B9\u30AB\u30FC\u30C8\u53F3\u524D1"
+    400042: "\u30B9\u30AB\u30FC\u30C8\u53F3\u524D2"
+    400044: "\u30B9\u30AB\u30FC\u30C8\u53F3\u5F8C1"
+    400046: "\u30B9\u30AB\u30FC\u30C8\u53F3\u5F8C2"
+    400048: "\u30B9\u30AB\u30FC\u30C8\u5DE6\u524D1"
+    400050: "\u30B9\u30AB\u30FC\u30C8\u5DE6\u524D2"
+    400052: "\u30B9\u30AB\u30FC\u30C8\u5DE6\u5F8C1"
+    400054: "\u30B9\u30AB\u30FC\u30C8\u5DE6\u5F8C2"
+    400056: "\u30DD\u30CB\u30FC\u30C6\u30FC\u30EB00"
+    400058: "\u30DD\u30CB\u30FC\u30C6\u30FC\u30EB01"
+    400060: "\u30DD\u30CB\u30FC\u30C6\u30FC\u30EB02"
+    400062: "\u30DD\u30CB\u30FC\u30C6\u30FC\u30EB03"
+    400064: "\u30DD\u30CB\u30FC\u30C6\u30FC\u30EBIK"
+    400066: "\u53F3\u624B"
+    400068: "\u53F3\u80A9"
+    400070: "\u53F3\u81551"
+    400072: "\u53F3\u81552"
+    400074: "\u53F3\u817F"
+    400076: "\u53F3\u8DB3"
+    400078: "\u53F3\u8DB32"
+    400080: "\u53F3\u8DB3IK"
+    400082: "\u5DE6\u624B"
+    400084: "\u5DE6\u80A9"
+    400086: "\u5DE6\u81551"
+    400088: "\u5DE6\u81552"
+    400090: "\u5DE6\u817F"
+    400092: "\u5DE6\u8DB3"
+    400094: "\u5DE6\u8DB32"
+    400096: "\u5DE6\u8DB3IK"
+    400098: "\u80F8"
+    400100: "\u8170"
+    400102: "\u81702"
+    400104: "\u8179"
+    400106: "\u982D"
+    400108: "\u982D\u7D42"
+    400110: "\u9996"
+    400112: "\uFF85\uFF7D\uFF9E\uFF85"
+    2100000: 02 - Default
+    4300000: "\uFF85\uFF7D\uFF9E\uFF85"
+    7400000: Take 001
+    7400002: Run
+    9500000: //RootNode
+    13700000: "\uFF85\uFF7D\uFF9E\uFF85"
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 64
+      lastFrame: 323
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Run
+      takeName: Take 001
+      firstFrame: 100
+      lastFrame: 160
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
