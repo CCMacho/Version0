@@ -4,21 +4,36 @@ using UnityEngine;
 
 public class Impact : MonoBehaviour {
 
-	int frame = 0;
+
+    GameManager gameManager;
 
 	// Use this for initialization
 	void Start () {
-		
+        gameManager = FindObjectOfType<GameManager>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		++frame;
-		Debug.Log(frame.ToString());
-		if(frame == 60)
-		{
-			transform.localScale = new Vector3(40f, 40f, 40f);
-			Debug.Log("in");
-		}
+
 	}
+
+     void OnTriggerEnter(Collider other)
+    {
+        if(other.transform.tag == "Goal")
+        {
+            if(transform.position.x > 0)
+            {
+                gameManager.AddRedPoint();
+			}
+			else if (transform.position.x < 0)
+			{
+				gameManager.AddBluePoint();
+				Debug.Log("sjaiohdf;oid");
+
+			}
+
+			transform.position = new Vector3(0, 12f, 0f);
+        }
+
+    }
 }

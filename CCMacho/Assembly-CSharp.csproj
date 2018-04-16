@@ -51,8 +51,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\C#\ArrivePoint.cs" />
+     <Compile Include="Assets\C#\ChoiseRange.cs" />
      <Compile Include="Assets\C#\GameManager.cs" />
      <Compile Include="Assets\C#\Impact.cs" />
+     <Compile Include="Assets\C#\ManMove.cs" />
+     <Compile Include="Assets\C#\Test.cs" />
      <Compile Include="Assets\C#\ZMove.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>

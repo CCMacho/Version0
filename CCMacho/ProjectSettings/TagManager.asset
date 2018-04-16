@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - Ball
+  - Man
+  - ManB
+  - Goal
+  - Ground
   layers:
   - Default
   - TransparentFX
