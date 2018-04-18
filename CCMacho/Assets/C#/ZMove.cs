@@ -4,13 +4,19 @@ using UnityEngine;
 
 public class ZMove : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
+	[SerializeField]
+	float speedX = 1.0f;
+    [SerializeField]
+    float speedZ = 1.0f;
+
+
+    // Use this for initialization
+    void Start () {
 		
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		transform.position = new Vector3(0f,0f,transform.position.z + 1f);
-	}
+ 		transform.Translate(speedX * Time.deltaTime, 0, speedZ * Time.deltaTime);
+ 	}
 }

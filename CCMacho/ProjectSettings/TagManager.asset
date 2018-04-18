@@ -9,6 +9,7 @@ TagManager:
   - ManB
   - Goal
   - Ground
+  - Box
   layers:
   - Default
   - TransparentFX

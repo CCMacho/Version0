@@ -1,7 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CCMacho.Plugins", "CCMacho.Plugins.csproj", "{4097D27D-F62B-C860-AEA0-A0ABBBC58859}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CCMacho", "CCMacho.csproj", "{20570DCC-B307-4C60-2922-45F9637FC4B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CCMacho.Editor.Plugins", "CCMacho.Editor.Plugins.csproj", "{EF2B7282-46F6-0855-BA59-998EE7B15EE4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,10 +13,18 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4097D27D-F62B-C860-AEA0-A0ABBBC58859}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4097D27D-F62B-C860-AEA0-A0ABBBC58859}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4097D27D-F62B-C860-AEA0-A0ABBBC58859}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4097D27D-F62B-C860-AEA0-A0ABBBC58859}.Release|Any CPU.Build.0 = Release|Any CPU
 		{20570DCC-B307-4C60-2922-45F9637FC4B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{20570DCC-B307-4C60-2922-45F9637FC4B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{20570DCC-B307-4C60-2922-45F9637FC4B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{20570DCC-B307-4C60-2922-45F9637FC4B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF2B7282-46F6-0855-BA59-998EE7B15EE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF2B7282-46F6-0855-BA59-998EE7B15EE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF2B7282-46F6-0855-BA59-998EE7B15EE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF2B7282-46F6-0855-BA59-998EE7B15EE4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

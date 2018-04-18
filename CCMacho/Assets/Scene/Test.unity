@@ -155,7 +155,7 @@ Prefab:
     - target: {fileID: 54151496232346932, guid: ed7e6daee396f4acaa93a5aa5b32daf9,
         type: 2}
       propertyPath: m_Mass
-      value: 1
+      value: 800
       objectReference: {fileID: 0}
     - target: {fileID: 54151496232346932, guid: ed7e6daee396f4acaa93a5aa5b32daf9,
         type: 2}
@@ -165,7 +165,7 @@ Prefab:
     - target: {fileID: 54151496232346932, guid: ed7e6daee396f4acaa93a5aa5b32daf9,
         type: 2}
       propertyPath: m_Drag
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1043952803545282, guid: ed7e6daee396f4acaa93a5aa5b32daf9, type: 2}
       propertyPath: m_IsActive
@@ -809,7 +809,7 @@ Prefab:
     - target: {fileID: 54151496232346932, guid: ed7e6daee396f4acaa93a5aa5b32daf9,
         type: 2}
       propertyPath: m_Mass
-      value: 1
+      value: 800
       objectReference: {fileID: 0}
     - target: {fileID: 54151496232346932, guid: ed7e6daee396f4acaa93a5aa5b32daf9,
         type: 2}
@@ -819,7 +819,7 @@ Prefab:
     - target: {fileID: 54151496232346932, guid: ed7e6daee396f4acaa93a5aa5b32daf9,
         type: 2}
       propertyPath: m_Drag
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1043952803545282, guid: ed7e6daee396f4acaa93a5aa5b32daf9, type: 2}
       propertyPath: m_IsActive
@@ -1240,7 +1240,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxMachoCount: 1000
   moveType: 2
-  magnificationForce: 50
+  magnificationForce: 10
 --- !u!4 &2056888558
 Transform:
   m_ObjectHideFlags: 0
