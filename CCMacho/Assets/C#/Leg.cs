@@ -15,11 +15,13 @@ public class Leg : MonoBehaviour {
 		
 	}
 
-	private void OnCollisionStay(Collision other_)
+	private void OnTriggerStay(Collider other_)
 	{
-		if (other_.transform.tag == "Box")
-		{
-			inputManager.IsGround(true);
+        Debug.Log(other_.transform.tag + "reg touch");
+		switch (other_.transform.tag) {
+			case "Box":
+				inputManager.IsGround(true);
+				break;
 		}
 	}
 }

@@ -6,10 +6,15 @@ public class InputManager : MonoBehaviour {
 
 
     float speedY = 0f;
-    float speedZ = 2f;
+    float speedZ = 0f;
+    [SerializeField]
+    float addSpeedZ = 0.1f;
+    [SerializeField]
+    float maxSpeedZ = 2f;
 
     float jumpPower = 10f;
     Rigidbody rigidbody;
+	[SerializeField]
     bool isGround = false;
 
 	// Use this for initialization
@@ -24,6 +29,12 @@ public class InputManager : MonoBehaviour {
         {
             Jump();
         }
+
+        if (speedZ + addSpeedZ < maxSpeedZ)
+        {
+            speedZ += addSpeedZ;
+        }
+
 
         transform.Translate(0f, 0f, speedZ * Time.deltaTime);
 
@@ -54,10 +65,16 @@ public class InputManager : MonoBehaviour {
 
     private void OnCollisionStay(Collision other_)
     {
-        if(other_.transform.tag == "Ground")
-        {
-            isGround = true;
-        }
+		switch (other_.transform.tag)
+		{
+			case "Ground":
+				isGround = true;
+				break;
+			case "Box":
+				speedZ = 0;
+				break;
+		}
+            
     }
 
 	public void IsGround(bool bool_)
