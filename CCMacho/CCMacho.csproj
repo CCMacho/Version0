@@ -254,6 +254,9 @@
     <Reference Include="UnityEditor.Graphs">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEditor.Android.Extensions">
+      <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.iOS.Extensions">
       <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll</HintPath>
     </Reference>
@@ -319,6 +322,7 @@
     <Compile Include="Assets\C#\TimeButton.cs" />
     <Compile Include="Assets\C#\Tuan.cs" />
     <Compile Include="Assets\C#\VectorExtensions.cs" />
+    <Compile Include="Assets\C#\WireFrame.cs" />
     <Compile Include="Assets\C#\ZMove.cs" />
     <Compile Include="Assets\GreenScreen\Scripts\CoordinateMapperManager.cs" />
     <Compile Include="Assets\GreenScreen\Scripts\CoordinateMapperView.cs" />
@@ -341,6 +345,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\GreenScreen\Materials\GreenScreenShader.shader" />
+    <None Include="Assets\Model\WireFrame.shader" />
     <None Include="Assets\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
     <None Include="Assets\Standard Assets\Effects\Projectors\Shaders\ProjectorLight.shader" />
     <None Include="Assets\Standard Assets\Effects\Projectors\Shaders\ProjectorMultiply.shader" />
