@@ -307,6 +307,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\GreenScreen\Materials\GreenScreenShader.shader" />
+    <None Include="Assets\Model\WireFrame.shader" />
     <None Include="Assets\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
     <None Include="Assets\Standard Assets\Effects\Projectors\Shaders\ProjectorLight.shader" />
     <None Include="Assets\Standard Assets\Effects\Projectors\Shaders\ProjectorMultiply.shader" />

@@ -1,9 +1,13 @@
-﻿using System.Collections;
+﻿//プレイヤーにつける
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class InputManager : MonoBehaviour {
+public class InputManager : MonoBehaviour
+{
 
+<<<<<<< HEAD
     /// /////////////
     private Vector3 PctouchStartPos;//タッチされた場所を保存する
     private Vector3 PctouchEndPos;//タッチが放された場所を保存する
@@ -169,26 +173,25 @@ public class InputManager : MonoBehaviour {
 		newLight.light = GameObject.Find("Light").GetComponent<Light>();
 
 		Destroy(obj, 0.5f);
+=======
+	ActionCharacter actionCharacter = null;
 
-        rigidbody.AddForce(new Vector3(0f, jumpPower, 0f), ForceMode.Impulse);
-    }
-
-    private void OnCollisionStay(Collision other_)
-    {
-		switch (other_.transform.tag)
-		{
-			case "Ground":
-				isGround = true;
-				break;
-			case "Box":
-				speedZ = 0;
-				break;
-		}
-            
-    }
-
-	public void IsGround(bool bool_)
+	// Use this for initialization
+	void Start()
 	{
-		isGround = bool_;
+		actionCharacter = GetComponent<ActionCharacter>();
+>>>>>>> 03601bf878f492df0eb2bc02af389c6879efa079
+
+	}
+
+	// Update is called once per frame
+	void Update()
+	{
+		if (Input.GetMouseButtonDown(0))
+		{
+			Debug.Log("jump");
+			actionCharacter.Jump();
+
+		}
 	}
 }
