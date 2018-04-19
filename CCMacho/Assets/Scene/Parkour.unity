@@ -788,7 +788,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 39467190
+  randomSeed: -846894582
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -4143,6 +4143,17 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
+--- !u!114 &609783524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 609783520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dafa721c1526d4418aa3694a02eb9fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &609783525
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4188,7 +4199,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 609783520}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0ee59e21bd5d69a49ab70dbceff05e5c, type: 3}
   m_Name: 

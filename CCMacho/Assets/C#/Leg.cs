@@ -17,7 +17,7 @@ public class Leg : MonoBehaviour {
 
 	private void OnTriggerStay(Collider other_)
 	{
-        Debug.Log(other_.transform.tag + "reg touch");
+        //Debug.Log(other_.transform.tag + "reg touch");
 		switch (other_.transform.tag) {
 			case "Box":
 				inputManager.IsGround(true);
