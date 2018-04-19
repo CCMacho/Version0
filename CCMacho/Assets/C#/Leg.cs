@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Leg : MonoBehaviour {
+public class LegCollision : MonoBehaviour {
 
 	InputManager inputManager;
 	void Start () {
@@ -17,8 +17,11 @@ public class Leg : MonoBehaviour {
 
 	private void OnTriggerStay(Collider other_)
 	{
-        Debug.Log(other_.transform.tag + "reg touch");
+        Debug.Log(other_.transform.tag + " reg touch");
 		switch (other_.transform.tag) {
+			case "Ground":
+				inputManager.IsGround(true);
+				break;
 			case "Box":
 				inputManager.IsGround(true);
 				break;

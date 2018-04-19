@@ -299,6 +299,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\C#\ArrivePoint.cs" />
+    <Compile Include="Assets\C#\BodyCollision.cs" />
     <Compile Include="Assets\C#\ChoiseRange.cs" />
     <Compile Include="Assets\C#\Edit.cs" />
     <Compile Include="Assets\C#\GameManager.cs" />
@@ -306,6 +307,7 @@
     <Compile Include="Assets\C#\InputManager.cs" />
     <Compile Include="Assets\C#\KinectAvatar.cs" />
     <Compile Include="Assets\C#\Leg.cs" />
+    <Compile Include="Assets\C#\LegCollision.cs" />
     <Compile Include="Assets\C#\Line.cs" />
     <Compile Include="Assets\C#\ManMove.cs" />
     <Compile Include="Assets\C#\ObstacleDetection.cs" />

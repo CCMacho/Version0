@@ -5,44 +5,46 @@ using UnityEngine;
 public class InputManager : MonoBehaviour {
 
 
-    float speedY = 0f;
-    float speedZ = 0f;
-    [SerializeField]
-    float addSpeedZ = 0.1f;
-    [SerializeField]
-    float maxSpeedZ = 2f;
-
-    float jumpPower = 10f;
-    Rigidbody rigidbody;
+	float speedY = 0f;
+	float speedZ = 0f;
 	[SerializeField]
-    bool isGround = false;
+	float addSpeedZ = 0.1f;
+	[SerializeField]
+	float maxSpeedZ = 2f;
+	[SerializeField]
+	float jumpPower = 10f;
+	Rigidbody rigidbody;
+	
+	bool isGround = false;
+	bool isHit = false;
 
 	// Use this for initialization
-	void Start () {
-        rigidbody = GetComponent<Rigidbody>();
+	void Start() {
+		rigidbody = GetComponent<Rigidbody>();
 	}
 
-    // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetMouseButtonDown(0) && isGround)
-        {
-            Jump();
-        }
+	// Update is called once per frame
+	void Update()
+	{
+		if (Input.GetMouseButtonDown(0) && isGround)
+		{
+			Jump();
+		}
 
-        if (speedZ + addSpeedZ < maxSpeedZ)
-        {
-            speedZ += addSpeedZ;
-        }
+		if (speedZ + addSpeedZ < maxSpeedZ && !isHit)
+		{
+			speedZ += addSpeedZ;
+		}
 
 
-        transform.Translate(0f, 0f, speedZ * Time.deltaTime);
+		transform.Translate(0f, 0f, speedZ * Time.deltaTime);
 
-        isGround = false;
-    }
+		isGround = false;
+		isHit = false;
+	}
 
-    void Jump()
-    {
+	void Jump()
+	{
 		GameObject obj = Instantiate(Resources.Load("Prefab/Pulse") as GameObject, transform.position, transform.rotation);
 
 		//obj.transform.SetParent(transform);
@@ -60,22 +62,19 @@ public class InputManager : MonoBehaviour {
 
 		Destroy(obj, 0.5f);
 
-        rigidbody.AddForce(new Vector3(0f, jumpPower, 0f), ForceMode.Impulse);
-    }
+		rigidbody.AddForce(new Vector3(0f, jumpPower, 0f), ForceMode.Impulse);
+	}
 
-    private void OnCollisionStay(Collision other_)
-    {
-		switch (other_.transform.tag)
-		{
-			case "Ground":
-				isGround = true;
-				break;
-			case "Box":
-				speedZ = 0;
-				break;
-		}
-            
-    }
+	public void SpeedZ(float num_)
+	{
+		speedZ = num_;
+	}
+	public void Hit()
+	{
+		Debug.Log("Hit");
+		speedZ = 0;
+		isHit = true;
+	}
 
 	public void IsGround(bool bool_)
 	{
