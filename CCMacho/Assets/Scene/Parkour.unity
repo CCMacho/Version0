@@ -1606,7 +1606,11 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
+<<<<<<< HEAD
+  randomSeed: -846894582
+=======
   randomSeed: 480100417
+>>>>>>> 03601bf878f492df0eb2bc02af389c6879efa079
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -5067,8 +5071,81 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
+<<<<<<< HEAD
+--- !u!114 &609783524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 609783520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dafa721c1526d4418aa3694a02eb9fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &609783525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 609783520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81d88d3e182a20b47a690da616e95710, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bodyCollisionText: {fileID: 1795994086}
+--- !u!65 &609783526
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 609783520}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 0.05, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &609783527
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 609783520}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 114
+  m_CollisionDetection: 0
+--- !u!114 &609783528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 609783520}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ee59e21bd5d69a49ab70dbceff05e5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  addSpeedZ: 0.05
+  maxSpeedZ: 5
+  isGround: 0
+--- !u!4 &609783530 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 400326, guid: 8f0565f23a2b58541a475bd3c1393052, type: 3}
+  m_PrefabInternal: {fileID: 1853184541}
+--- !u!1 &660022884
+GameObject:
+=======
 --- !u!198 &566696169
 ParticleSystem:
+>>>>>>> 03601bf878f492df0eb2bc02af389c6879efa079
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 198394797711798474, guid: 56418371ca56378448ceb616edad57ec,
     type: 2}
