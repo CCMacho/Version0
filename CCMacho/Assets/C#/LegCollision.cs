@@ -2,25 +2,61 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Leg : MonoBehaviour {
+public class LegCollision : MonoBehaviour
+{
 
-	InputManager inputManager;
-	void Start () {
-		inputManager = FindObjectOfType<InputManager>();
+	ActionCharacter actionCharacter;
+	void Start()
+	{
+		actionCharacter = transform.parent.GetComponent<ActionCharacter>();
+
 
 	}
-	
+
 	// Update is called once per frame
-	void Update () {
-		
+	void Update()
+	{
+
 	}
 
 	private void OnTriggerStay(Collider other_)
 	{
-        Debug.Log(other_.transform.tag + "reg touch");
-		switch (other_.transform.tag) {
+		//Debug.Log(other_.transform.tag + " reg touch");
+		switch (other_.transform.tag)
+		{
+			case "Ground":
+				actionCharacter.IsGround(true);
+				break;
 			case "Box":
-				inputManager.IsGround(true);
+				actionCharacter.IsGround(true);
+				break;
+		}
+	}
+
+	private void OnTriggerEnter(Collider other_)
+	{
+		//Debug.Log(other_.transform.tag + " reg touch");
+		switch (other_.transform.tag)
+		{
+			case "Ground":
+				actionCharacter.IsGround(true);
+				break;
+			case "Box":
+				actionCharacter.IsGround(true);
+				break;
+		}
+	}
+
+	private void OnTriggerExit(Collider other_)
+	{
+		//Debug.Log(other_.transform.tag + " reg touch");
+		switch (other_.transform.tag)
+		{
+			case "Ground":
+				actionCharacter.IsGround(false);
+				break;
+			case "Box":
+				actionCharacter.IsGround(false);
 				break;
 		}
 	}

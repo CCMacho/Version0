@@ -6,6 +6,10 @@ using UnityEngine.Events;
 
 public class TimeButton : MonoBehaviour {
 
+	[SerializeField]
+	float SlowMagnification = 0.5f;
+
+
 	// Use this for initialization
 	void Start () {
 		
@@ -28,7 +32,7 @@ public class TimeButton : MonoBehaviour {
 	}
 
 	public void SlowTime(){
-		Time.timeScale = 0.5f;
+		Time.timeScale = SlowMagnification;
 
 	}
 }

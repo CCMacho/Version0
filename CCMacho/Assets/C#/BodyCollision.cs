@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class BodyCollision : MonoBehaviour {
 
-	InputManager inputManager;
+	ActionCharacter actionCharacter;
 
 	// Use this for initialization
 	void Start () {
-		inputManager = FindObjectOfType<InputManager>();
-		
+		actionCharacter = transform.parent.GetComponent<ActionCharacter>();
+
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
 		
@@ -19,15 +19,15 @@ public class BodyCollision : MonoBehaviour {
 
 	private void OnTriggerStay(Collider other_)
 	{
-		Debug.Log(other_.transform.tag + " body touch");
+		//Debug.Log(other_.transform.tag + " body touch");
 
 		switch (other_.transform.tag)
 		{
 			case "Ground":
-				inputManager.IsGround(true);
+				actionCharacter.IsGround(true);
 				break;
 			case "Box":
-				inputManager.Hit();
+				actionCharacter.Hit();
 				break;
 		}
 
