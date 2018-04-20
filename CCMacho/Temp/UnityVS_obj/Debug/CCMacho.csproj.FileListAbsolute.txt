@@ -1,2 +1,0 @@
-D:\CCMacho\CCMacho\Temp\UnityVS_obj\Debug\CCMacho.csprojResolveAssemblyReference.cache
-D:\CCMacho\CCMacho\Temp\UnityVS_obj\Debug\CCMacho.csproj.CoreCompileInputs.cache
