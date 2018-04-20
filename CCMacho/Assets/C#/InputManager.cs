@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class InputManager : MonoBehaviour
 {
 
-<<<<<<< HEAD
+//<<<<<<< HEAD
     /// /////////////
     private Vector3 PctouchStartPos;//タッチされた場所を保存する
     private Vector3 PctouchEndPos;//タッチが放された場所を保存する

@@ -254,6 +254,9 @@
     <Reference Include="UnityEditor.Graphs">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEditor.Android.Extensions">
+      <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.iOS.Extensions">
       <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll</HintPath>
     </Reference>
@@ -310,6 +313,7 @@
     <Compile Include="Assets\C#\Impact.cs" />
     <Compile Include="Assets\C#\InputManager.cs" />
     <Compile Include="Assets\C#\KinectAvatar.cs" />
+    <Compile Include="Assets\C#\Leg.cs" />
     <Compile Include="Assets\C#\LegCollision.cs" />
     <Compile Include="Assets\C#\Line.cs" />
     <Compile Include="Assets\C#\ManMove.cs" />
