@@ -14,11 +14,17 @@ public class ParkourGameManager : MonoBehaviour {
 	float time = 0;
 	[SerializeField]
 	float baseActionPoint = 0.1f;
+	int score = 0;
+	int displayScore = 0;
+	int totalScore = 0;
 
 	//シングルトン
 	Text commandTimeText = null;
 	TimeButton timeButton = null;
 	Slider actionGauge = null;
+	Text displayScoreText = null;
+	Text totalScoreText = null;
+
 
 	// Use this for initialization
 	void Start () {
@@ -26,6 +32,10 @@ public class ParkourGameManager : MonoBehaviour {
 		timeButton = FindObjectOfType<TimeButton>();
 		commandTimeText.enabled = false;
 		actionGauge = GameObject.Find("ActionGauge").GetComponent<Slider>();
+		displayScoreText = GameObject.Find("Score").GetComponent<Text>();
+		totalScoreText = GameObject.Find("TotalScore").GetComponent<Text>();
+
+
 	}
 
 	// Update is called once per frame
@@ -51,8 +61,22 @@ public class ParkourGameManager : MonoBehaviour {
 		else
 		{
 			actionGauge.value += baseActionPoint * Time.deltaTime;
+			AddScore((int)(baseActionPoint * Time.deltaTime * 1000f));
 		}
 
+		if(score != displayScore)
+		{
+			displayScore += score / (displayScore + 1);
+			displayScoreText.text = "Just Now Action Score:" + displayScore * 10;
+		}
+		else
+		{
+
+			score = displayScore = 0;
+			displayScoreText.text = "Just Now Action Score:" + 0;
+
+			
+		}
 	}
 
 	public void CommandTimeOn()
@@ -61,5 +85,10 @@ public class ParkourGameManager : MonoBehaviour {
 		commandTimeText.enabled = true;
 		timeButton.SlowTime();
 
+	}
+
+	public void AddScore(int num_)
+	{
+		score += num_;
 	}
 }

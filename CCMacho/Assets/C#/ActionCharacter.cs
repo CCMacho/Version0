@@ -34,12 +34,13 @@ public class ActionCharacter : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
+
+		transform.Translate(0f, 0f, speedZ * Time.deltaTime);
 		if (speedZ + addSpeedZ < maxSpeedZ && !isHit)
 		{
 			speedZ += addSpeedZ;
 		}
-
-		transform.Translate(0f, 0f, speedZ * Time.deltaTime);
 
 		isHit = false;
 		//isHeadHeightBox = false;
