@@ -1,0 +1,6 @@
+diff a/Test.txt b/Test.txt	(rejected hunks)
+@@ -2,3 +2,4 @@
+ ������
+ =======
+ huu
++>>>>>>> a3a8e5e5b4c3a4319ce0e4661c8bfa2a4fda8fbc
