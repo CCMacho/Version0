@@ -254,6 +254,9 @@
     <Reference Include="UnityEditor.Graphs">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEditor.Android.Extensions">
+      <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.iOS.Extensions">
       <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll</HintPath>
     </Reference>
@@ -311,6 +314,7 @@
     <Compile Include="Assets\C#\InputManager.cs" />
     <Compile Include="Assets\C#\KinectAvatar.cs" />
     <Compile Include="Assets\C#\LegCollision.cs" />
+    <Compile Include="Assets\C#\LegHeightCollision.cs" />
     <Compile Include="Assets\C#\Line.cs" />
     <Compile Include="Assets\C#\ManMove.cs" />
     <Compile Include="Assets\C#\ObstacleDetection.cs" />
@@ -318,6 +322,7 @@
     <Compile Include="Assets\C#\Recognition.cs" />
     <Compile Include="Assets\C#\Test.cs" />
     <Compile Include="Assets\C#\TimeButton.cs" />
+    <Compile Include="Assets\C#\TitleManager.cs" />
     <Compile Include="Assets\C#\TouchControl.cs" />
     <Compile Include="Assets\C#\Tuan.cs" />
     <Compile Include="Assets\C#\VectorExtensions.cs" />

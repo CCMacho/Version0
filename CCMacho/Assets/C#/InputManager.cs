@@ -24,6 +24,10 @@ public class InputManager : MonoBehaviour
 			Debug.Log("jump");
 			actionCharacter.Jump();
 
+		}else if (Input.GetMouseButtonDown(1))
+		{
+			Debug.Log("sliding");
+			actionCharacter.Sliding();
 		}
 	}
 }
