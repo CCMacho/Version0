@@ -254,9 +254,6 @@
     <Reference Include="UnityEditor.Graphs">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEditor.Android.Extensions">
-      <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEditor.iOS.Extensions">
       <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll</HintPath>
     </Reference>
@@ -301,14 +298,19 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\C#\ActionCamera.cs" />
+    <Compile Include="Assets\C#\ActionCharacter.cs" />
+    <Compile Include="Assets\C#\AIManager.cs" />
     <Compile Include="Assets\C#\ArrivePoint.cs" />
+    <Compile Include="Assets\C#\BodyCollision.cs" />
     <Compile Include="Assets\C#\ChoiseRange.cs" />
     <Compile Include="Assets\C#\Edit.cs" />
     <Compile Include="Assets\C#\GameManager.cs" />
+    <Compile Include="Assets\C#\HeadHeightCollision.cs" />
     <Compile Include="Assets\C#\Impact.cs" />
     <Compile Include="Assets\C#\InputManager.cs" />
     <Compile Include="Assets\C#\KinectAvatar.cs" />
-    <Compile Include="Assets\C#\Leg.cs" />
+    <Compile Include="Assets\C#\LegCollision.cs" />
     <Compile Include="Assets\C#\Line.cs" />
     <Compile Include="Assets\C#\ManMove.cs" />
     <Compile Include="Assets\C#\ObstacleDetection.cs" />
@@ -316,11 +318,11 @@
     <Compile Include="Assets\C#\Recognition.cs" />
     <Compile Include="Assets\C#\Test.cs" />
     <Compile Include="Assets\C#\TimeButton.cs" />
+    <Compile Include="Assets\C#\TouchControl.cs" />
     <Compile Include="Assets\C#\Tuan.cs" />
     <Compile Include="Assets\C#\VectorExtensions.cs" />
+    <Compile Include="Assets\C#\WireFrame.cs" />
     <Compile Include="Assets\C#\ZMove.cs" />
-    <Compile Include="Assets\GreenScreen\Scripts\CoordinateMapperManager.cs" />
-    <Compile Include="Assets\GreenScreen\Scripts\CoordinateMapperView.cs" />
     <Compile Include="Assets\KinectView\Scripts\BodySourceManager.cs" />
     <Compile Include="Assets\KinectView\Scripts\BodySourceView.cs" />
     <Compile Include="Assets\KinectView\Scripts\ColorSourceManager.cs" />
@@ -339,7 +341,7 @@
     <Compile Include="Assets\UnityChan\Scripts\UnityChanControlScriptWithRgidBody.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\GreenScreen\Materials\GreenScreenShader.shader" />
+    <None Include="Assets\Model\WireFrame.shader" />
     <None Include="Assets\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
     <None Include="Assets\Standard Assets\Effects\Projectors\Shaders\ProjectorLight.shader" />
     <None Include="Assets\Standard Assets\Effects\Projectors\Shaders\ProjectorMultiply.shader" />
