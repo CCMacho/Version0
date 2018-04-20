@@ -4,7 +4,6 @@ D:\CCMacho\CCMacho\Temp\UnityVS_bin\Debug\nunit.framework.dll
 D:\CCMacho\CCMacho\Temp\UnityVS_bin\Debug\SyntaxTree.VisualStudio.Unity.Bridge.dll
 D:\CCMacho\CCMacho\Temp\UnityVS_bin\Debug\UnityEditor.Advertisements.dll
 D:\CCMacho\CCMacho\Temp\UnityVS_bin\Debug\UnityEditor.Analytics.dll
-D:\CCMacho\CCMacho\Temp\UnityVS_bin\Debug\UnityEditor.Android.Extensions.dll
 D:\CCMacho\CCMacho\Temp\UnityVS_bin\Debug\UnityEditor.dll
 D:\CCMacho\CCMacho\Temp\UnityVS_bin\Debug\UnityEditor.GoogleAudioSpatializer.dll
 D:\CCMacho\CCMacho\Temp\UnityVS_bin\Debug\UnityEditor.Graphs.dll
@@ -158,6 +157,7 @@ D:\CCMacho\CCMacho\Temp\UnityVS_bin\Debug\UnityEngine.HoloLens.xml
 D:\CCMacho\CCMacho\Temp\UnityVS_bin\Debug\UnityEditor.SpatialTracking.xml
 D:\CCMacho\CCMacho\Temp\UnityVS_bin\Debug\UnityEngine.SpatialTracking.xml
 D:\CCMacho\CCMacho\Temp\UnityVS_bin\Debug\UnityEditor.VR.xml
+D:\CCMacho\CCMacho\Temp\UnityVS_obj\Debug\CCMacho.Plugins.csprojResolveAssemblyReference.cache
 D:\CCMacho\CCMacho\Temp\UnityVS_obj\Debug\CCMacho.Plugins.csproj.CoreCompileInputs.cache
 D:\CCMacho\CCMacho\Temp\UnityVS_obj\Debug\CCMacho.Plugins.csproj.CopyComplete
 D:\CCMacho\CCMacho\Temp\UnityVS_obj\Debug\Assembly-CSharp-firstpass.dll

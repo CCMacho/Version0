@@ -310,6 +310,7 @@
     <Compile Include="Assets\C#\Impact.cs" />
     <Compile Include="Assets\C#\InputManager.cs" />
     <Compile Include="Assets\C#\KinectAvatar.cs" />
+    <Compile Include="Assets\C#\Leg.cs" />
     <Compile Include="Assets\C#\LegCollision.cs" />
     <Compile Include="Assets\C#\Line.cs" />
     <Compile Include="Assets\C#\ManMove.cs" />
@@ -318,6 +319,7 @@
     <Compile Include="Assets\C#\Recognition.cs" />
     <Compile Include="Assets\C#\Test.cs" />
     <Compile Include="Assets\C#\TimeButton.cs" />
+    <Compile Include="Assets\C#\TouchControl.cs" />
     <Compile Include="Assets\C#\Tuan.cs" />
     <Compile Include="Assets\C#\VectorExtensions.cs" />
     <Compile Include="Assets\C#\WireFrame.cs" />

@@ -20,7 +20,7 @@ public class Leg : MonoBehaviour {
         //Debug.Log(other_.transform.tag + "reg touch");
 		switch (other_.transform.tag) {
 			case "Box":
-				inputManager.IsGround(true);
+				ActionCharacter.IsGround(true);
 				break;
 		}
 	}

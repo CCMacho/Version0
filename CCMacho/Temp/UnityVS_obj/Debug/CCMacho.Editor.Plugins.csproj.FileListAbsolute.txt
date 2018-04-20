@@ -4,7 +4,6 @@ D:\CCMacho\CCMacho\Temp\UnityVS_bin\Debug\nunit.framework.dll
 D:\CCMacho\CCMacho\Temp\UnityVS_bin\Debug\SyntaxTree.VisualStudio.Unity.Bridge.dll
 D:\CCMacho\CCMacho\Temp\UnityVS_bin\Debug\UnityEditor.Advertisements.dll
 D:\CCMacho\CCMacho\Temp\UnityVS_bin\Debug\UnityEditor.Analytics.dll
-D:\CCMacho\CCMacho\Temp\UnityVS_bin\Debug\UnityEditor.Android.Extensions.dll
 D:\CCMacho\CCMacho\Temp\UnityVS_bin\Debug\UnityEditor.dll
 D:\CCMacho\CCMacho\Temp\UnityVS_bin\Debug\UnityEditor.GoogleAudioSpatializer.dll
 D:\CCMacho\CCMacho\Temp\UnityVS_bin\Debug\UnityEditor.Graphs.dll
@@ -91,6 +90,7 @@ D:\CCMacho\CCMacho\Temp\UnityVS_bin\Debug\Unity.Cecil.Mdb.dll
 D:\CCMacho\CCMacho\Temp\UnityVS_bin\Debug\SyntaxTree.VisualStudio.Unity.Messaging.dll
 D:\CCMacho\CCMacho\Temp\UnityVS_bin\Debug\Unity.CecilTools.dll
 D:\CCMacho\CCMacho\Temp\UnityVS_bin\Debug\Unity.Cecil.Pdb.dll
+D:\CCMacho\CCMacho\Temp\UnityVS_bin\Debug\Assembly-CSharp-firstpass.pdb
 D:\CCMacho\CCMacho\Temp\UnityVS_bin\Debug\UnityEditor.xml
 D:\CCMacho\CCMacho\Temp\UnityVS_bin\Debug\UnityEngine.xml
 D:\CCMacho\CCMacho\Temp\UnityVS_bin\Debug\UnityEngine.CoreModule.xml
