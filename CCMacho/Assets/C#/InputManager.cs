@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class InputManager : MonoBehaviour
 {
 
-<<<<<<< HEAD
+//<<<<<<< HEAD
     /// /////////////
     private Vector3 PctouchStartPos;//タッチされた場所を保存する
     private Vector3 PctouchEndPos;//タッチが放された場所を保存する
@@ -29,19 +29,23 @@ public class InputManager : MonoBehaviour
 	// Use this for initialization
 	void Start () {
         rigidbody = GetComponent<Rigidbody>();
+		actionCharacter = GetComponent<ActionCharacter>();
+
 	}
 
-    // Update is called once per frame
-    void Update()
+	// Update is called once per frame
+	void Update()
     {
         PcCon();//PC用
 
-        if (Input.GetMouseButtonDown(0) && isGround)
-        {
-            //Jump();
-        }
+		if (Input.GetMouseButtonDown(0))
+		{
+			Debug.Log("jump");
+			actionCharacter.Jump();
 
-        if (speedZ + addSpeedZ < maxSpeedZ)
+		}
+
+		if (speedZ + addSpeedZ < maxSpeedZ)
         {
             speedZ += addSpeedZ;
         }
@@ -155,43 +159,4 @@ public class InputManager : MonoBehaviour
         }
     }
 
-    void Jump()
-    {
-		GameObject obj = Instantiate(Resources.Load("Prefab/Pulse") as GameObject, transform.position, transform.rotation);
-
-		//obj.transform.SetParent(transform);
-		obj.transform.position = transform.position;
-		Debug.Log("Nome");
-
-		ParticleSystem newObjPaticle = obj.GetComponent<ParticleSystem>();
-		var newShape = obj.GetComponent<ParticleSystem>().shape;
-
-		newShape.skinnedMeshRenderer = GameObject.Find("Nazuna").GetComponent<SkinnedMeshRenderer>();
-
-		var newLight = obj.GetComponent<ParticleSystem>().lights;
-
-		newLight.light = GameObject.Find("Light").GetComponent<Light>();
-
-		Destroy(obj, 0.5f);
-=======
-	ActionCharacter actionCharacter = null;
-
-	// Use this for initialization
-	void Start()
-	{
-		actionCharacter = GetComponent<ActionCharacter>();
->>>>>>> 03601bf878f492df0eb2bc02af389c6879efa079
-
-	}
-
-	// Update is called once per frame
-	void Update()
-	{
-		if (Input.GetMouseButtonDown(0))
-		{
-			Debug.Log("jump");
-			actionCharacter.Jump();
-
-		}
-	}
 }
