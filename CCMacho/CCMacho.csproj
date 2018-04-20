@@ -310,7 +310,6 @@
     <Compile Include="Assets\C#\Impact.cs" />
     <Compile Include="Assets\C#\InputManager.cs" />
     <Compile Include="Assets\C#\KinectAvatar.cs" />
-    <Compile Include="Assets\C#\Leg.cs" />
     <Compile Include="Assets\C#\LegCollision.cs" />
     <Compile Include="Assets\C#\Line.cs" />
     <Compile Include="Assets\C#\ManMove.cs" />
@@ -324,8 +323,6 @@
     <Compile Include="Assets\C#\VectorExtensions.cs" />
     <Compile Include="Assets\C#\WireFrame.cs" />
     <Compile Include="Assets\C#\ZMove.cs" />
-    <Compile Include="Assets\GreenScreen\Scripts\CoordinateMapperManager.cs" />
-    <Compile Include="Assets\GreenScreen\Scripts\CoordinateMapperView.cs" />
     <Compile Include="Assets\KinectView\Scripts\BodySourceManager.cs" />
     <Compile Include="Assets\KinectView\Scripts\BodySourceView.cs" />
     <Compile Include="Assets\KinectView\Scripts\ColorSourceManager.cs" />
@@ -344,7 +341,6 @@
     <Compile Include="Assets\UnityChan\Scripts\UnityChanControlScriptWithRgidBody.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\GreenScreen\Materials\GreenScreenShader.shader" />
     <None Include="Assets\Model\WireFrame.shader" />
     <None Include="Assets\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
     <None Include="Assets\Standard Assets\Effects\Projectors\Shaders\ProjectorLight.shader" />
