@@ -62,7 +62,7 @@ public class KinectAvatar : MonoBehaviour
 	{
 		if (_BodyManager == null)
 		{
-			//Debug.Log("_BodyManager == null");
+			Debug.Log("_BodyManager == null");
 			return;
 		}
 
