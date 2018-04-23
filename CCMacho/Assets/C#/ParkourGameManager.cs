@@ -32,7 +32,7 @@ public class ParkourGameManager : MonoBehaviour {
 		timeButton = FindObjectOfType<TimeButton>();
 		commandTimeText.enabled = false;
 		actionGauge = GameObject.Find("ActionGauge").GetComponent<Slider>();
-		displayScoreText = GameObject.Find("Score").GetComponent<Text>();
+		displayScoreText = GameObject.Find("DisplayScore").GetComponent<Text>();
 		totalScoreText = GameObject.Find("TotalScore").GetComponent<Text>();
 
 
@@ -71,7 +71,8 @@ public class ParkourGameManager : MonoBehaviour {
 		}
 		else
 		{
-
+            totalScore += score * 10;
+            totalScoreText.text = "Total Score:" + totalScore.ToString();
 			score = displayScore = 0;
 			displayScoreText.text = "Just Now Action Score:" + 0;
 

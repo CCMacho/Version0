@@ -32,4 +32,20 @@ public class BodyCollision : MonoBehaviour {
 		}
 
 	}
+
+	private void OnTriggerEnter(Collider other_)
+	{
+		//Debug.Log(other_.transform.tag + " body touch");
+
+		switch (other_.transform.tag)
+		{
+			case "Ground":
+				actionCharacter.IsGround(true);
+				break;
+			case "Box":
+				actionCharacter.Hit();
+				break;
+		}
+
+	}
 }

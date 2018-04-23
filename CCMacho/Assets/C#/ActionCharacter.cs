@@ -20,6 +20,8 @@ public class ActionCharacter : MonoBehaviour {
 	bool isHeadHeightBox = false;
 	bool isLegHeightBox = false;
 
+	Vector3 oldPosition = Vector3.zero;
+
 	//シングルトン
 	Rigidbody rigidbody = null;
 	ParkourGameManager parkourGameManager = null;
@@ -34,6 +36,7 @@ public class ActionCharacter : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		oldPosition = transform.position;
 
 
 		transform.Translate(0f, 0f, speedZ * Time.deltaTime);
@@ -51,6 +54,7 @@ public class ActionCharacter : MonoBehaviour {
 			hitText.text = "Head " + isHeadHeightBox.ToString() + " Leg " + isLegHeightBox.ToString();
 
 		}
+
 	}
 
 	public void Jump()
@@ -59,6 +63,7 @@ public class ActionCharacter : MonoBehaviour {
 		{
 			return;
 		}
+
 
 		GameObject obj = Instantiate(Resources.Load("Prefab/Pulse") as GameObject, transform.position, transform.rotation);
 
@@ -91,6 +96,8 @@ public class ActionCharacter : MonoBehaviour {
 			return;
 		}
 
+
+
 		GameObject obj = Instantiate(Resources.Load("Prefab/SlidingPulse") as GameObject, transform.position, transform.rotation);
 
 		//obj.transform.SetParent(transform);
@@ -104,9 +111,7 @@ public class ActionCharacter : MonoBehaviour {
 		var newLight = obj.GetComponent<ParticleSystem>().lights;
 
 		newLight.light = GameObject.Find("Light").GetComponent<Light>();
-
 		Destroy(obj, 0.5f);
-
 		rigidbody.AddForce(new Vector3(0f, 0f, jumpPower), ForceMode.Impulse);
 
 		if (isHeadHeightBox)
@@ -123,6 +128,8 @@ public class ActionCharacter : MonoBehaviour {
 	{
 		speedZ = 0;
 		isHit = true;
+
+		transform.position = new Vector3(transform.position.x, transform.position.y, oldPosition.z);
 	}
 
 	public void IsGround(bool bool_)
@@ -139,4 +146,6 @@ public class ActionCharacter : MonoBehaviour {
 	{
 		isLegHeightBox = bool_;
 	}
+
+
 }
