@@ -281,7 +281,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 627723387}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6bf00555ce010f647902ef142f7295ba, type: 3}
   m_Name: 
@@ -289,6 +289,8 @@ MonoBehaviour:
   addSpeedZ: 0.1
   maxSpeedZ: 2
   jumpPower: 10
+  slidingTime: 1
+  hitText: {fileID: 0}
 --- !u!4 &627723394 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4442495316444148, guid: 56418371ca56378448ceb616edad57ec,

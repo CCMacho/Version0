@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿//入力の記録「
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

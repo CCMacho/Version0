@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿//カメラ用
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -24,12 +25,14 @@ public class ActionCamera : MonoBehaviour {
 		
 	}
 
+	//アクションが見やすい位置に移動
 	public void ActionCameraOn()
 	{
 		transform.transform.localPosition = actionPosition;
 		transform.localRotation = actionRotation;
 	}
 
+	//元に戻す
 	public void ActionCameraOff()
 	{
 		transform.localPosition = startPosition;

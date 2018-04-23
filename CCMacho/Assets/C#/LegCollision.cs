@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿//足のコライダー用
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -19,7 +20,7 @@ public class LegCollision : MonoBehaviour
 
 	}
 
-	private void OnTriggerStay(Collider other_)
+	private void OnTriggerEnter(Collider other_)
 	{
 		//Debug.Log(other_.transform.tag + " reg touch");
 		switch (other_.transform.tag)
@@ -33,7 +34,7 @@ public class LegCollision : MonoBehaviour
 		}
 	}
 
-	private void OnTriggerEnter(Collider other_)
+	private void OnTriggerStay(Collider other_)
 	{
 		//Debug.Log(other_.transform.tag + " reg touch");
 		switch (other_.transform.tag)

@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿//パルクールゲーム用システム統括
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -80,6 +81,7 @@ public class ParkourGameManager : MonoBehaviour {
 		}
 	}
 
+	//コマンドタイム開始
 	public void CommandTimeOn()
 	{
 		commandTime = commandTimeLength;
@@ -88,6 +90,7 @@ public class ParkourGameManager : MonoBehaviour {
 
 	}
 
+	//スコア増加
 	public void AddScore(int num_)
 	{
 		score += num_;

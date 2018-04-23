@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿//アクションキャラクターの基本挙動
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -13,6 +14,9 @@ public class ActionCharacter : MonoBehaviour {
 	float maxSpeedZ = 2f;
 	[SerializeField]
 	float jumpPower = 10f;
+	[SerializeField]
+	float slidingTime = 1f;
+	float nowSlidingTime = 0f;
 
 	//当たり判定フラグ
 	bool isGround = false;
@@ -27,11 +31,13 @@ public class ActionCharacter : MonoBehaviour {
 	ParkourGameManager parkourGameManager = null;
 	[SerializeField]
 	Text hitText = null;
+	GameObject bodyCollision;
 
 	// Use this for initialization
 	void Start () {
 		rigidbody = GetComponent<Rigidbody>();
 		parkourGameManager = FindObjectOfType<ParkourGameManager>();
+		bodyCollision = transform.Find("BodyCollision").gameObject;
 	}
 	
 	// Update is called once per frame
@@ -55,8 +61,17 @@ public class ActionCharacter : MonoBehaviour {
 
 		}
 
+		if (nowSlidingTime > 0f)
+		{
+			nowSlidingTime -= Time.deltaTime;
+			if (nowSlidingTime <= 0)
+			{
+				bodyCollision.transform.localScale = new Vector3(bodyCollision.transform.localScale.x, bodyCollision.transform.localScale.y * 2f, bodyCollision.transform.localScale.z);
+			}
+		}
 	}
 
+	//ジャンプの挙動
 	public void Jump()
 	{
 		if (!isGround)
@@ -89,6 +104,7 @@ public class ActionCharacter : MonoBehaviour {
 		}
 	}
 
+	//スライディング挙動
 	public void Sliding()
 	{
 		if (!isGround)
@@ -96,7 +112,8 @@ public class ActionCharacter : MonoBehaviour {
 			return;
 		}
 
-
+		bodyCollision.transform.localScale = new Vector3(bodyCollision.transform.localScale.x, bodyCollision.transform.localScale.y / 2f, bodyCollision.transform.localScale.z);
+		nowSlidingTime = slidingTime;
 
 		GameObject obj = Instantiate(Resources.Load("Prefab/SlidingPulse") as GameObject, transform.position, transform.rotation);
 
@@ -120,10 +137,13 @@ public class ActionCharacter : MonoBehaviour {
 		}
 	}
 
+	//Z軸のスピード設定
 	public void SpeedZ(float num_)
 	{
 		speedZ = num_;
 	}
+
+	//壁などに当たった時の挙動
 	public void Hit()
 	{
 		speedZ = 0;
@@ -132,20 +152,24 @@ public class ActionCharacter : MonoBehaviour {
 		transform.position = new Vector3(transform.position.x, transform.position.y, oldPosition.z);
 	}
 
+	//接地情報の設定
 	public void IsGround(bool bool_)
 	{
 		isGround = bool_;
 	}
 
+	//頭の高さに障害物があるかの設定
 	public void HeadHeightBox(bool bool_ = true)
 	{
 		isHeadHeightBox = bool_;
 	}
 
+	//足の高さに障害物があるかの設定
 	public void LegHeightBox(bool bool_ = true)
 	{
 		isLegHeightBox = bool_;
 	}
+
 
 
 }

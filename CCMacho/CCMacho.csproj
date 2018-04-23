@@ -309,6 +309,7 @@
     <Compile Include="Assets\C#\ChoiseRange.cs" />
     <Compile Include="Assets\C#\Edit.cs" />
     <Compile Include="Assets\C#\GameManager.cs" />
+    <Compile Include="Assets\C#\GoalManager.cs" />
     <Compile Include="Assets\C#\HeadHeightCollision.cs" />
     <Compile Include="Assets\C#\Impact.cs" />
     <Compile Include="Assets\C#\InputManager.cs" />
@@ -327,7 +328,7 @@
     <Compile Include="Assets\C#\Tuan.cs" />
     <Compile Include="Assets\C#\VectorExtensions.cs" />
     <Compile Include="Assets\C#\WireFrame.cs" />
-    <Compile Include="Assets\C#\ZMove.cs" />
+    <Compile Include="Assets\C#\XYZMove.cs" />
     <Compile Include="Assets\KinectView\Scripts\BodySourceManager.cs" />
     <Compile Include="Assets\KinectView\Scripts\BodySourceView.cs" />
     <Compile Include="Assets\KinectView\Scripts\ColorSourceManager.cs" />

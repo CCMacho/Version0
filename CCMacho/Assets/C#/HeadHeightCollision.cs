@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿//頭の高さの判定用コライダー用
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -19,6 +20,16 @@ public class HeadHeightCollision : MonoBehaviour {
 		
 	}
 
+
+	private void OnTriggerEnter(Collider other_)
+	{
+		switch (other_.transform.tag)
+		{
+			case "Box":
+				actionCharacter.HeadHeightBox();
+				break;
+		}
+	}
 	private void OnTriggerStay(Collider other_)
 	{
 		//Debug.Log(other_.transform.tag + " HeadHeight touch");
@@ -32,15 +43,6 @@ public class HeadHeightCollision : MonoBehaviour {
 
 	}
 
-	private void OnTriggerEnter(Collider other_)
-	{
-		switch (other_.transform.tag)
-		{
-			case "Box":
-				actionCharacter.HeadHeightBox();
-				break;
-		}
-	}
 
 	private void OnTriggerExit(Collider other_)
 	{

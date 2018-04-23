@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿//画面に線を描く
+using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 

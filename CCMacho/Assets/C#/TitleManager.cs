@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿//タイトル画面統括用
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor.SceneManagement;
