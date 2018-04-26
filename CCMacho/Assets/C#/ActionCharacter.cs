@@ -110,7 +110,7 @@ public class ActionCharacter : MonoBehaviour {
 	//スライディング挙動
 	public void Sliding()
 	{
-		if (!isGround)
+		if (!isGround || nowSlidingTime > 0f)
 		{
 			return;
 		}
@@ -173,6 +173,6 @@ public class ActionCharacter : MonoBehaviour {
 		isLegHeightBox = bool_;
 	}
 
-
+	
 
 }

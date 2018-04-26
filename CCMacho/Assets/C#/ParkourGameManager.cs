@@ -18,6 +18,9 @@ public class ParkourGameManager : MonoBehaviour {
 	int score = 0;
 	int displayScore = 0;
 	int totalScore = 0;
+	[SerializeField]
+	float slowMagnification = 0.1f;
+	
 
 	//シングルトン
 	Text commandTimeText = null;
@@ -30,6 +33,8 @@ public class ParkourGameManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		timeButton  = Instantiate(Resources.Load<GameObject>("Prefab/TimeButton")).GetComponent<TimeButton>();
+
 		commandTimeText = GameObject.Find("CommandTime").GetComponent<Text>();
 		timeButton = FindObjectOfType<TimeButton>();
 		commandTimeText.enabled = false;
@@ -91,7 +96,7 @@ public class ParkourGameManager : MonoBehaviour {
 		commandTime = commandTimeLength;
 		commandTimeText.enabled = true;
 		timeButton.SlowTime();
-		audioSource.pitch = timeButton.SlowMagnification();
+		audioSource.pitch = slowMagnification;
 		audioSource.volume = 0.5f;
 	}
 
@@ -99,5 +104,10 @@ public class ParkourGameManager : MonoBehaviour {
 	public void AddScore(int num_)
 	{
 		score += num_;
+	}
+
+	public float SlowMagnification()
+	{
+		return slowMagnification;
 	}
 }

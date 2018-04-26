@@ -7,13 +7,13 @@ using UnityEngine.Events;
 
 public class TimeButton : MonoBehaviour {
 
-	[SerializeField]
 	float slowMagnification = 0.5f;
-
+	ParkourGameManager parkourGameManager;
 
 	// Use this for initialization
 	void Start () {
-		
+		parkourGameManager = FindObjectOfType<ParkourGameManager>();
+		slowMagnification = parkourGameManager.SlowMagnification();
 	}
 	
 	// Update is called once per frame
@@ -41,8 +41,5 @@ public class TimeButton : MonoBehaviour {
 		
 	}
 
-	public float SlowMagnification()
-	{
-		return slowMagnification;
-	}
+
 }
