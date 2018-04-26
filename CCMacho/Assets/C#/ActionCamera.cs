@@ -11,11 +11,12 @@ public class ActionCamera : MonoBehaviour {
 	[SerializeField]
 	Vector3 actionPosition = new Vector3(3f, 2f, 2f);
 	[SerializeField]
-	Quaternion actionRotation = new Quaternion(10f * Mathf.PI / 180f, -120f * Mathf.PI / 180f, 2f * Mathf.PI / 180f, 1);
+	Quaternion actionRotationRadian = new Quaternion(10f * Mathf.PI / 180f, -120f * Mathf.PI / 180f, 2f * Mathf.PI / 180f, 1);
 
 
 	// Use this for initialization
 	void Start () {
+
 		startPosition = transform.localPosition;
 		startRotation = transform.localRotation;
 	}
@@ -29,7 +30,7 @@ public class ActionCamera : MonoBehaviour {
 	public void ActionCameraOn()
 	{
 		transform.transform.localPosition = actionPosition;
-		transform.localRotation = actionRotation;
+		transform.localRotation = actionRotationRadian;
 	}
 
 	//元に戻す
