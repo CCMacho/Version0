@@ -25,6 +25,7 @@ public class ActionCharacter : MonoBehaviour {
 	bool isLegHeightBox = false;
 
 	Vector3 oldPosition = Vector3.zero;
+	Vector3 startBodyCollisionScale = Vector3.zero;
 
 	//シングルトン
 	Rigidbody rigidbody = null;
@@ -38,13 +39,14 @@ public class ActionCharacter : MonoBehaviour {
 		rigidbody = GetComponent<Rigidbody>();
 		parkourGameManager = FindObjectOfType<ParkourGameManager>();
 		bodyCollision = transform.Find("BodyCollision").gameObject;
+		startBodyCollisionScale = bodyCollision.transform.localScale;
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		oldPosition = transform.position;
 
-
+		//移動
 		transform.Translate(0f, 0f, speedZ * Time.deltaTime);
 		if (speedZ + addSpeedZ < maxSpeedZ && !isHit)
 		{
@@ -61,12 +63,13 @@ public class ActionCharacter : MonoBehaviour {
 
 		}
 
+		//Slidingの後処理
 		if (nowSlidingTime > 0f)
 		{
 			nowSlidingTime -= Time.deltaTime;
 			if (nowSlidingTime <= 0)
 			{
-				bodyCollision.transform.localScale = new Vector3(bodyCollision.transform.localScale.x, bodyCollision.transform.localScale.y * 2f, bodyCollision.transform.localScale.z);
+				bodyCollision.transform.localScale = new Vector3(startBodyCollisionScale.x, startBodyCollisionScale.y, startBodyCollisionScale.z);
 			}
 		}
 	}
@@ -112,7 +115,7 @@ public class ActionCharacter : MonoBehaviour {
 			return;
 		}
 
-		bodyCollision.transform.localScale = new Vector3(bodyCollision.transform.localScale.x, bodyCollision.transform.localScale.y / 2f, bodyCollision.transform.localScale.z);
+		bodyCollision.transform.localScale = new Vector3(startBodyCollisionScale.x, startBodyCollisionScale.y / 2f, startBodyCollisionScale.z);
 		nowSlidingTime = slidingTime;
 
 		GameObject obj = Instantiate(Resources.Load("Prefab/SlidingPulse") as GameObject, transform.position, transform.rotation);

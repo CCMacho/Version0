@@ -25,6 +25,7 @@ public class ParkourGameManager : MonoBehaviour {
 	Slider actionGauge = null;
 	Text displayScoreText = null;
 	Text totalScoreText = null;
+	AudioSource audioSource;
 
 
 	// Use this for initialization
@@ -36,7 +37,7 @@ public class ParkourGameManager : MonoBehaviour {
 		displayScoreText = GameObject.Find("DisplayScore").GetComponent<Text>();
 		totalScoreText = GameObject.Find("TotalScore").GetComponent<Text>();
 
-
+		audioSource = GetComponent<AudioSource>();
 	}
 
 	// Update is called once per frame
@@ -48,6 +49,9 @@ public class ParkourGameManager : MonoBehaviour {
 
 			commandTimeText.enabled = false;
 			timeButton.StartTime();
+			audioSource.pitch = 1f;
+			audioSource.volume = 1f;
+
 
 			FindObjectOfType<ActionCamera>().ActionCameraOn();
 			actionTime = actionTimeLength;
@@ -87,7 +91,8 @@ public class ParkourGameManager : MonoBehaviour {
 		commandTime = commandTimeLength;
 		commandTimeText.enabled = true;
 		timeButton.SlowTime();
-
+		audioSource.pitch = timeButton.SlowMagnification();
+		audioSource.volume = 0.5f;
 	}
 
 	//スコア増加
